@@ -54,7 +54,7 @@ apt install -f
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
 
-apt install mat bleachbit curl dconf editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop openvpn preload shutter synaptic telegram-desktop virtualbox vlc unrar wget zip -y
+apt install mat bleachbit curl dconf-editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop openvpn preload shutter synaptic telegram-desktop virtualbox vlc unrar wget zip -y
 
 #install stable chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
