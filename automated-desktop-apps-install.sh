@@ -13,7 +13,7 @@ read -p "
 bleachbit
 chrome
 curl
-dconf editor
+dconf-editor
 deluge
 fb Reader
 gdebi
