@@ -16,7 +16,6 @@ curl
 dconf editor
 deluge
 fb Reader
-firefox
 gdebi
 geany
 gimp
