@@ -40,7 +40,10 @@ virtualbox
 vlc
 webtorrent
 wget
-zip" -t 5
+zip
+dialog 
+python3-pip 
+python3-setuptools" -t 10
 
 echo ""
 
@@ -54,7 +57,7 @@ apt install -f
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
 
-apt install mat bleachbit curl dconf-editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop openvpn preload shutter synaptic telegram-desktop virtualbox vlc unrar wget zip -y
+apt install mat bleachbit curl dconf editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload shutter synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
 
 #install stable chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -107,6 +110,9 @@ wget https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.21.0/
 dpkg -i webtorrent*.deb
 
 rm webtorrent*.deb
+
+#install protonvpn
+pip3 install protonvpn-cli
 
 echo ""
 echo "All done, you can check the above to see if any errors occured. A system reboot is recommended."
