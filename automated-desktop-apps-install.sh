@@ -53,6 +53,8 @@ dpkg --configure -a
 apt update -y
 apt upgrade -y
 apt install -f
+apt clean
+apt autoclean
 
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
@@ -79,8 +81,6 @@ rm fbreader*.deb
 echo "installing Nextcloud Desktop Client"
 add-apt-repository ppa:nextcloud-devs/client -y
 
-apt update
-
 apt install nextcloud-client -y
 
 #install plex
@@ -89,23 +89,19 @@ wget https://downloads.plex.tv/plex-media-server-new/1.19.1.2645-ccb6eb67e/debia
 
 dpkg -i plex*
 
-service plexmediaserver restart
-
 rm plex*.deb
+
+service plexmediaserver restart
 
 #install unetbootin
 echo "installing UNetBootin"
 add-apt-repository ppa:gezakovacs/ppa -y
-
-apt update
 
 apt install unetbootin -y
 
 #install veracrypt
 echo "installing VeraCrypt"
 add-apt-repository ppa:unit193/encryption -y
-
-apt update
 
 apt install veracrypt -y
 
@@ -121,5 +117,13 @@ rm webtorrent*.deb
 echo "installing ProtonVPN through pip3 package manager"
 pip3 install protonvpn-cli
 
+#fixes any errors and auto cleans packages downloaded/ not needed anymore
+echo "auto cleaning now, and fixing any errors."
+dpkg --configure -a
+apt install -f
+apt clean
+apt autoclean
+apt autoremove -y
+
 echo ""
-echo "All done, you can check above to see if any errors occured. A system reboot is recommended."
+echo "All done! You can check above to see if any errors occured. A system reboot is recommended."
