@@ -61,6 +61,12 @@ apt autoclean
 
 apt install mat bleachbit curl dconf editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload shutter synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
 
+#install nextcloud client
+echo "installing Nextcloud Desktop Client"
+add-apt-repository ppa:nextcloud-devs/client -y
+
+apt install nextcloud-client -y
+
 #install stable chrome
 echo "installing Google Chrome"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -76,12 +82,6 @@ wget https://fbreader.org/files/desktop/fbreader_0.99.4-1_amd64.deb
 apt install ./fbreader_0.99.4-1_amd64.deb
 
 rm fbreader*.deb
-
-#install nextcloud client
-echo "installing Nextcloud Desktop Client"
-add-apt-repository ppa:nextcloud-devs/client -y
-
-apt install nextcloud-client -y
 
 #install plex
 echo "Installing Plex Media Server"
