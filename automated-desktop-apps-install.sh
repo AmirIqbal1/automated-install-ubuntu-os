@@ -31,6 +31,7 @@ plex
 preload
 shutter
 snap (package manager)
+snapd
 synaptic
 telegram
 unetbootin
@@ -59,7 +60,7 @@ apt autoclean
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
 
-apt install mat bleachbit curl dconf editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload shutter snap synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
+apt install mat bleachbit curl dconf editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload shutter snap snapd synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
 
 #install nextcloud client
 echo "installing Nextcloud Desktop Client"
