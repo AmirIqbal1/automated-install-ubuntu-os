@@ -7,7 +7,6 @@ echo ""
 echo "It will install:"
 
 #below, is the packages it will install
-
 echo ""
 read -p "
 bleachbit
@@ -31,6 +30,7 @@ openvpn
 plex
 preload
 shutter
+snap (package manager)
 synaptic
 telegram
 unetbootin
@@ -59,7 +59,7 @@ apt autoclean
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
 
-apt install mat bleachbit curl dconf editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload shutter synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
+apt install mat bleachbit curl dconf editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload shutter snap synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
 
 #install nextcloud client
 echo "installing Nextcloud Desktop Client"
@@ -85,11 +85,7 @@ rm fbreader*.deb
 
 #install plex
 echo "Installing Plex Media Server"
-wget https://downloads.plex.tv/plex-media-server-new/1.19.1.2645-ccb6eb67e/debian/plexmediaserver_1.19.1.2645-ccb6eb67e_amd64.deb
-
-dpkg -i plex*
-
-rm plex*.deb
+snap install plexmediaserver
 
 service plexmediaserver restart
 
