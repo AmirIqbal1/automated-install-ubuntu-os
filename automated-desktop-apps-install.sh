@@ -29,6 +29,7 @@ nextcloud Desktop Client
 openvpn
 plex
 preload
+rkhunter
 shutter
 snap (package manager)
 snapd
@@ -60,7 +61,7 @@ apt autoclean
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
 
-apt install mat bleachbit curl dconf editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload shutter snap snapd synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
+apt install mat bleachbit curl dconf editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload rkhunter shutter snap snapd synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
 
 #install nextcloud client
 echo "installing Nextcloud Desktop Client"
@@ -121,6 +122,9 @@ apt install -f
 apt clean
 apt autoclean
 apt autoremove -y
+
+echo ""
+echo -e "\e[42mrkhunter has been installed, please configure it using link in README.md file."
 
 echo ""
 echo "All done! You can check above to see if any errors occured. A system reboot is recommended."
