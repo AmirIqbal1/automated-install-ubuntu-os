@@ -28,7 +28,6 @@ mat (exiftool)
 nextcloud Desktop Client
 openvpn
 plex
-preload
 rkhunter
 shutter
 snap (package manager)
