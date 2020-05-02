@@ -14,7 +14,8 @@ chrome
 curl
 dconf-editor
 deluge
-fb Reader
+firefox
+foliate (ebook reader)
 gdebi
 geany
 gimp
@@ -60,54 +61,30 @@ apt autoclean
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
 
-apt install mat bleachbit curl dconf editor deluge gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload rkhunter shutter snap snapd synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
+apt install mat bleachbit curl dconf-editor deluge firefox gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload rkhunter shutter snap snapd synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
 
-#install nextcloud client
-echo "installing Nextcloud Desktop Client"
+#install nextcloud client, unetbootin, veracrypt & chrome via PPA 
+echo "installing Nextcloud Desktop Client, UNetBootin, VeraCrypt & Google Chrome via PPA"
 add-apt-repository ppa:nextcloud-devs/client -y
-
-apt install nextcloud-client -y
-
-#install stable chrome
-echo "installing Google Chrome"
+add-apt-repository ppa:gezakovacs/ppa -y
+add-apt-repository ppa:unit193/encryption -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
-apt install ./google-chrome-stable_current_amd64.deb
+apt install nextcloud-client unetbootin veracrypt -y
+dpkg -i google-chrome-stable_current_amd64.deb
 
 rm google-chrome*.deb
 
-#install fb reader
-echo "installing FB Reader"
-wget https://fbreader.org/files/desktop/fbreader_0.99.4-1_amd64.deb
-
-apt install ./fbreader_0.99.4-1_amd64.deb
-
-rm fbreader*.deb
-
-#install plex
-echo "Installing Plex Media Server"
-snap install plexmediaserver
+#install plex & foliate (ebook reader)
+echo "Installing Plex Media Server & Foliate (Ebook Reader)"
+snap install plexmediaserver foliate
 
 service plexmediaserver restart
-
-#install unetbootin
-echo "installing UNetBootin"
-add-apt-repository ppa:gezakovacs/ppa -y
-
-apt install unetbootin -y
-
-#install veracrypt
-echo "installing VeraCrypt"
-add-apt-repository ppa:unit193/encryption -y
-
-apt install veracrypt -y
 
 #install webtorrent
 echo "installing WebTorrent Desktop" 
 wget https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.21.0/webtorrent-desktop_0.21.0_amd64.deb
-
 dpkg -i webtorrent*.deb
-
 rm webtorrent*.deb
 
 #install protonvpn
