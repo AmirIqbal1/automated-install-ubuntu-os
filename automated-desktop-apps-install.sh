@@ -27,6 +27,7 @@ htop
 libreoffice (Calc & Writer)
 mat (exiftool)
 nextcloud Desktop Client
+nordpass
 openvpn
 plex
 rkhunter
@@ -75,11 +76,13 @@ dpkg -i google-chrome-stable_current_amd64.deb
 
 rm google-chrome*.deb
 
-#install plex & foliate (ebook reader)
-echo "Installing Plex Media Server & Foliate (Ebook Reader)"
-snap install plexmediaserver foliate
+#install plex, foliate (ebook reader) & nordpass
+echo "Installing Plex Media Server, Foliate (Ebook Reader) & Nordpass"
+snap install plexmediaserver foliate nordpass
 
 service plexmediaserver restart
+#allows nordpass snap to connect to browsers
+snap connect nordpass:password-manager-service
 
 #install webtorrent
 echo "installing WebTorrent Desktop" 
