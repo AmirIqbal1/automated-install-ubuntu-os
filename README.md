@@ -5,7 +5,7 @@ This bash script will auto install selected desktop programs on Ubuntu 18.04 (ha
 
 It will auto install all the below apps:
 
-bleachbit, google chrome, curl, dconf-editor, dialog, deluge, foliate (ebook reader), firefox, gdebi, geany, gimp, git, gnome-tweak-tool, gparted, gufw, htop, libreoffice (Calc & Writer), mat (exiftool), nextcloud desktop client, nordpass, openvpn, plex, protonvpn-cli, python3-pip, python3-setuptools, rkhunter, shutter, snap (package manager), snapd, synaptic, telegram, unetbootin, unrar, veracrypt, virtualbox, vlc, webtorrent, wget, zip.
+bleachbit, curl, dconf-editor, dialog, deluge, foliate (ebook reader), firefox, gdebi, geany, gimp, git, gnome-tweak-tool, gparted, gufw, htop, libreoffice (Calc & Writer), mat (exiftool), nextcloud desktop client, nordpass, openvpn, plex, protonvpn-cli, python3-pip, python3-setuptools, rkhunter, shutter, snap (package manager), snapd, synaptic, telegram, unetbootin, unrar, veracrypt, virtualbox, vlc, webtorrent, wget, zip.
 
 Get's my other scripts's (protonvpn-cli, rkhunter-script & auto-update-ubuntu.sh)
 
