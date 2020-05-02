@@ -10,7 +10,6 @@ echo "It will install:"
 echo ""
 read -p "
 bleachbit
-chrome
 curl
 dconf-editor
 deluge
@@ -65,16 +64,12 @@ apt autoclean
 apt install mat bleachbit curl dconf-editor deluge firefox gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload rkhunter shutter snap snapd synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
 
 #install nextcloud client, unetbootin, veracrypt & chrome via PPA 
-echo "installing Nextcloud Desktop Client, UNetBootin, VeraCrypt & Google Chrome via PPA"
+echo "installing Nextcloud Desktop Client, UNetBootin & VeraCrypt"
 add-apt-repository ppa:nextcloud-devs/client -y
 add-apt-repository ppa:gezakovacs/ppa -y
 add-apt-repository ppa:unit193/encryption -y
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 apt install nextcloud-client unetbootin veracrypt -y
-dpkg -i google-chrome-stable_current_amd64.deb
-
-rm google-chrome*.deb
 
 #install plex, foliate (ebook reader) & nordpass
 echo "Installing Plex Media Server, Foliate (Ebook Reader) & Nordpass"
