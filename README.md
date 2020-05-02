@@ -7,7 +7,7 @@ It will auto install all the below apps:
 
 bleachbit, google chrome, curl, dconf-editor, dialog, deluge, foliate (ebook reader), firefox, gdebi, geany, gimp, git, gnome-tweak-tool, gparted, gufw, htop, libreoffice (Calc & Writer), mat (exiftool), nextcloud desktop client, openvpn, plex, protonvpn-cli, python3-pip, python3-setuptools, rkhunter, shutter, snap (package manager), snapd, synaptic, telegram, unetbootin, unrar, veracrypt, virtualbox, vlc, webtorrent, wget, zip.
 
-Get's my other repo's (protonvpn-cli, rkhunter-script & auto-update-ubuntu.sh)
+Get's my other scripts's (protonvpn-cli, rkhunter-script & auto-update-ubuntu.sh)
 
 Also installs rkhunter (a rootkit hunter) which can be configured with the below link:
 
