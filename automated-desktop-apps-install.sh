@@ -91,6 +91,15 @@ rm webtorrent*.deb
 echo "installing ProtonVPN through pip3 package manager"
 pip3 install protonvpn-cli
 
+#automatically gets my other script's
+echo "Grabbing other scripts: protonvpn, check-vpn, rkhunter-check & auto-update-ubuntu-script"
+
+wget https://raw.githubusercontent.com/AmirIqbal1/auto-connect-to-protonvpn-cli/master/check-vpn.sh https://raw.githubusercontent.com/AmirIqbal1/auto-connect-to-protonvpn-cli/master/protonvpn.sh https://raw.githubusercontent.com/AmirIqbal1/auto-update-ubuntu-script/master/update.sh https://raw.githubusercontent.com/AmirIqbal1/rkhunter-script/master/rkhunter-check.sh
+
+#automatically chmods above scripts
+echo "chmod those scripts"
+chmod +x protonvpn.sh check-vpn.sh update.sh rkhunter-check.sh
+
 #fixes any errors and auto cleans packages downloaded/ not needed anymore
 echo "auto cleaning now, and fixing any errors."
 dpkg --configure -a
