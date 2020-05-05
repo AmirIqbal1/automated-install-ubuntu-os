@@ -9,42 +9,43 @@ echo "It will install:"
 #below, is the packages it will install
 echo ""
 read -p "
-bleachbit
-curl
-dconf-editor
-deluge
-firefox
-foliate (ebook reader)
-gdebi
-geany
-gimp
-git
-gnome-tweak-tool
-gparted
-gufw
-htop
-libreoffice (calc & writer)
-mat2
-nextcloud desktop client
-nordpass
-openvpn
-plex
-rkhunter
-snap (package manager)
-snapd
-synaptic
-telegram-desktop
-unrar
-veracrypt
-virtualbox
-vlc
-webtorrent
-wget
-y-ppa-manager
-zip
+bleachbit 
+curl 
+dconf-editor 
 dialog 
+deluge 
+foliate (ebook reader) 
+firefox 
+gdebi 
+geany 
+gimp 
+git 
+gnome-tweak-tool 
+gparted 
+gufw 
+htop 
+libreoffice (calc & writer) 
+mat2 
+nextcloud desktop client 
+nordpass 
+openvpn 
+plex 
+protonvpn-cli 
 python3-pip 
-python3-setuptools" -t 10
+python3-setuptools 
+rkhunter 
+snap (package manager) 
+snapd 
+synaptic 
+telegram-desktop
+unrar 
+veracrypt 
+virtualbox 
+vlc 
+webtorrent 
+wget 
+y-ppa-manager 
+zip" -t 10
 
 echo ""
 
