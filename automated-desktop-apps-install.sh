@@ -23,19 +23,17 @@ gnome-tweak-tool
 gparted
 gufw
 htop
-libreoffice (Calc & Writer)
-mat (exiftool)
-nextcloud Desktop Client
+libreoffice (calc & writer)
+mat2
+nextcloud desktop client
 nordpass
 openvpn
 plex
 rkhunter
-shutter
 snap (package manager)
 snapd
 synaptic
-telegram
-unetbootin
+telegram-desktop
 unrar
 veracrypt
 virtualbox
@@ -61,19 +59,18 @@ apt autoclean
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
 
-apt install mat bleachbit curl dconf-editor deluge firefox gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn preload rkhunter shutter snap snapd synaptic telegram-desktop virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
+apt install mat bleachbit curl dconf-editor deluge firefox gufw git gdebi gnome-tweak-tool geany gparted libreoffice-calc libreoffice-writer openvpn preload rkhunter snap snapd synaptic virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
 
-#install nextcloud client, unetbootin, veracrypt & chrome via PPA 
+#install nextcloud client & veracrypt via PPA
 echo "installing Nextcloud Desktop Client, UNetBootin & VeraCrypt"
 add-apt-repository ppa:nextcloud-devs/client -y
-add-apt-repository ppa:gezakovacs/ppa -y
 add-apt-repository ppa:unit193/encryption -y
 
-apt install nextcloud-client unetbootin veracrypt -y
+apt install nextcloud-client veracrypt -y
 
-#install plex, foliate (ebook reader) & nordpass
-echo "Installing Plex Media Server, Foliate (Ebook Reader) & Nordpass"
-snap install plexmediaserver foliate nordpass
+#install plex, foliate (ebook reader), nordpass, telegram-desktop, htop gimp
+echo "Installing Plex Media Server, Foliate (Ebook Reader), Nordpass, Telegram Desktop, htop Gimp"
+snap install plexmediaserver foliate nordpass telegram-desktop htop gimp
 
 service plexmediaserver restart
 #allows nordpass snap to connect to browsers
