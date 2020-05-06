@@ -78,6 +78,10 @@ service plexmediaserver restart
 #allows nordpass snap to connect to browsers
 snap connect nordpass:password-manager-service
 
+#install deju dup backup tool
+echo "Installing Deja Dup Backup"
+snap install deja-dup --classic
+
 #install webtorrent
 echo "installing WebTorrent Desktop" 
 wget https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.21.0/webtorrent-desktop_0.21.0_amd64.deb
