@@ -9,7 +9,8 @@ echo "It will install:"
 #below, is the packages it will install
 echo ""
 read -p "
-bleachbit 
+backup (Déjà Dup)
+bleachbit
 curl 
 dconf-editor 
 dialog 
@@ -26,7 +27,6 @@ gufw
 htop 
 libreoffice (calc & writer) 
 mat2 
-nextcloud desktop client 
 nordpass 
 openvpn 
 plex 
@@ -63,13 +63,12 @@ apt autoclean
 
 apt-get install mat2 bleachbit curl dconf-editor deluge firefox gufw git gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn rkhunter snap snapd synaptic virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
 
-#install nextcloud client, veracrypt & y-ppa-manager via PPA
-echo "installing Nextcloud Desktop Client, UNetBootin, VeraCrypt & y-ppa-manager"
-add-apt-repository ppa:nextcloud-devs/client -y
+#install veracrypt & y-ppa-manager via PPA
+echo "installing VeraCrypt & y-ppa-manager"
 add-apt-repository ppa:unit193/encryption -y
 add-apt-repository ppa:webupd8team/y-ppa-manager -y
 
-apt-get install nextcloud-client veracrypt y-ppa-manager -y
+apt-get install veracrypt y-ppa-manager -y
 
 #install plex, foliate (ebook reader), nordpass, telegram-desktop, gimp
 echo "Installing Plex Media Server, Foliate (Ebook Reader), Nordpass, Telegram Desktop, Gimp"
