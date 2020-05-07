@@ -1,5 +1,5 @@
 # auto-install-desktop-programs
-This bash script will auto install selected desktop programs on Ubuntu 18.04 (hasn't been tested with 20.04 yet).
+This bash script will auto install selected desktop programs on Ubuntu 20.04.
 
 "chmod +x automated-desktop-apps-install.sh" the file before starting, and make sure you run as root!
 
