@@ -1,51 +1,7 @@
 #!/bin/bash
 
 echo ""
-read -p "This script will auto install all your programs." -t 5
-
-echo ""
-echo "It will install:"
-
-#below, is the packages it will install
-echo ""
-read -p "
-backup (Déjà Dup)
-bleachbit
-curl 
-dconf-editor 
-dialog 
-deluge 
-foliate (ebook reader) 
-firefox 
-gdebi 
-geany 
-gimp 
-git 
-gnome-tweak-tool 
-gparted 
-gufw 
-htop 
-libreoffice (calc & writer) 
-mat2 
-nordpass 
-openvpn 
-plex 
-protonvpn-cli 
-python3-pip 
-python3-setuptools 
-rkhunter 
-snap (package manager) 
-snapd 
-synaptic 
-telegram-desktop
-unrar 
-veracrypt 
-virtualbox 
-vlc 
-webtorrent 
-wget 
-y-ppa-manager 
-zip" -t 10
+read -p "This script will auto install all your programs. View the README file to see what gets installed." -t 5
 
 echo ""
 
