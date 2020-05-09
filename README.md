@@ -9,6 +9,10 @@ backup (Déjà Dup), bleachbit, curl, dconf-editor, dialog, deluge, foliate (ebo
 
 Get's my other scripts's (protonvpn-cli, rkhunter-script & auto-update-ubuntu.sh)
 
+Get's pCloud Desktop app too from:
+
+https://www.pcloud.com/how-to-install-pcloud-drive-linux.html?download=electron-64
+
 Also installs rkhunter (a rootkit hunter) which can be configured with the below link:
 
 https://kifarunix.com/how-to-install-rkhunter-rootkit-hunter-on-ubuntu-18-04/
