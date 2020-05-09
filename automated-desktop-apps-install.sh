@@ -101,6 +101,11 @@ wget https://raw.githubusercontent.com/AmirIqbal1/auto-connect-to-protonvpn-cli/
 echo "chmod those scripts"
 chmod +x protonvpn.sh check-vpn.sh update.sh rkhunter-check.sh
 
+#get pcloud 64bit client, puts it into the download folder
+cd Downloads
+
+wget https://p-def1.pcloud.com/cBZLReAUjZLbsoWfZGnhJ7ZZ4l66a7Z2ZZGNHZkZpOo5VZzFZtkZO0ZYXZ45Z37ZpVZY0Z3FZr5ZGFZh5ZVXZyVZtouTkZv13bkNVgBHkmEymgiPHFz5p2HEw7/pcloud
+
 #fixes any errors and auto cleans packages downloaded/ not needed anymore
 echo "auto cleaning now, and fixing any errors."
 dpkg --configure -a
