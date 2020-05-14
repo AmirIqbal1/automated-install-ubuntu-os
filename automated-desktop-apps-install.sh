@@ -51,11 +51,11 @@ pip3 install protonvpn-cli
 #automatically gets my other script's
 echo "Grabbing other scripts: protonvpn, check-vpn, rkhunter-check & auto-update-ubuntu-script"
 
-wget https://raw.githubusercontent.com/AmirIqbal1/auto-connect-to-protonvpn-cli/master/check-vpn.sh https://raw.githubusercontent.com/AmirIqbal1/auto-connect-to-protonvpn-cli/master/protonvpn.sh https://raw.githubusercontent.com/AmirIqbal1/auto-update-ubuntu-script/master/update.sh https://raw.githubusercontent.com/AmirIqbal1/rkhunter-script/master/rkhunter-check.sh
+wget https://raw.githubusercontent.com/AmirIqbal1/auto-connect-to-protonvpn-cli/master/check-vpn.sh https://raw.githubusercontent.com/AmirIqbal1/auto-connect-to-protonvpn-cli/master/protonvpn.sh https://raw.githubusercontent.com/AmirIqbal1/auto-update-ubuntu-script/master/update.sh https://raw.githubusercontent.com/AmirIqbal1/rkhunter-script/master/rkhunter-check.sh https://raw.githubusercontent.com/AmirIqbal1/clamav-autocheck/master/clamav-autocheck.sh
 
 #automatically chmods above scripts
-echo "chmod those scripts"
-chmod +x protonvpn.sh check-vpn.sh update.sh rkhunter-check.sh
+echo "chmodding those scripts"
+chmod +x protonvpn.sh check-vpn.sh update.sh rkhunter-check.sh clamav-autocheck.sh
 
 #get pcloud 64bit client, puts it into the download folder
 cd Downloads
