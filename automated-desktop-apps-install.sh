@@ -49,7 +49,7 @@ echo "installing ProtonVPN through pip3 package manager"
 pip3 install protonvpn-cli
 
 #automatically gets my other script's
-echo "Grabbing other scripts: protonvpn, check-vpn, rkhunter-check & auto-update-ubuntu-script"
+echo "Grabbing other scripts: protonvpn, check-vpn, rkhunter-check, auto-update-ubuntu-script, clamav-autocheck"
 
 wget https://raw.githubusercontent.com/AmirIqbal1/auto-connect-to-protonvpn-cli/master/check-vpn.sh https://raw.githubusercontent.com/AmirIqbal1/auto-connect-to-protonvpn-cli/master/protonvpn.sh https://raw.githubusercontent.com/AmirIqbal1/auto-update-ubuntu-script/master/update.sh https://raw.githubusercontent.com/AmirIqbal1/rkhunter-script/master/rkhunter-check.sh https://raw.githubusercontent.com/AmirIqbal1/clamav-autocheck/master/clamav-autocheck.sh
 
