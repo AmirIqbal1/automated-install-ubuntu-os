@@ -44,18 +44,14 @@ wget https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.21.0/
 dpkg -i webtorrent*.deb
 rm webtorrent*.deb
 
-#install protonvpn
-echo "installing ProtonVPN through pip3 package manager"
-pip3 install protonvpn-cli
-
 #automatically gets my other script's
-echo "Grabbing other scripts: protonvpn, check-vpn, rkhunter-check, auto-update-ubuntu-script, clamav-autocheck"
+echo "Grabbing other scripts: rkhunter-check, auto-update-ubuntu-script, clamav-autocheck"
 
-wget https://raw.githubusercontent.com/AmirIqbal1/auto-connect-to-protonvpn-cli/master/check-vpn.sh https://raw.githubusercontent.com/AmirIqbal1/auto-connect-to-protonvpn-cli/master/protonvpn.sh https://raw.githubusercontent.com/AmirIqbal1/auto-update-ubuntu-script/master/update.sh https://raw.githubusercontent.com/AmirIqbal1/rkhunter-script/master/rkhunter-check.sh https://raw.githubusercontent.com/AmirIqbal1/clamav-autocheck/master/clamav-autocheck.sh
+wget https://raw.githubusercontent.com/AmirIqbal1/auto-update-ubuntu-script/master/update.sh https://raw.githubusercontent.com/AmirIqbal1/rkhunter-script/master/rkhunter-check.sh https://raw.githubusercontent.com/AmirIqbal1/clamav-autocheck/master/clamav-autocheck.sh
 
 #automatically chmods above scripts
 echo "chmodding those scripts"
-chmod +x protonvpn.sh check-vpn.sh update.sh rkhunter-check.sh clamav-autocheck.sh
+chmod +x update.sh rkhunter-check.sh clamav-autocheck.sh
 
 #get pcloud 64bit client, puts it into the download folder
 cd Downloads
