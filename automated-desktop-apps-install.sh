@@ -27,8 +27,8 @@ add-apt-repository ppa:webupd8team/y-ppa-manager -y
 apt-get install veracrypt y-ppa-manager -y
 
 #install apps through snap
-echo "Installing Plex Media Server, Foliate (Ebook Reader), Nordpass, Telegram Desktop, Gimp & Chromium"
-snap install plexmediaserver foliate nordpass telegram-desktop gimp
+echo "Installing snap packages"
+snap install plexmediaserver foliate nordpass telegram-desktop gimp chromium
 
 service plexmediaserver restart
 #allows nordpass snap to connect to browsers
