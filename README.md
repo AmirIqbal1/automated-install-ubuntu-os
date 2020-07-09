@@ -5,7 +5,7 @@ This bash script will auto install selected desktop programs on Ubuntu 20.04.
 
 It will auto install all the below apps:
 
-backup (Déjà Dup), bleachbit, chromium, clamtk, clamav, clamav-daemon, curl, dangerzone, dconf-editor, dialog, deluge, foliate (ebook reader), filezilla, firefox, gdebi, geany, gimp, git, gnome-tweak-tool, gparted, gufw, htop, libreoffice (calc & writer), mat2, nordpass, openvpn, plex, rkhunter, snap (package manager), snapd, synaptic, tilix, telegram, unrar, veracrypt, virtualbox, vlc, webtorrent, wget, y-ppa-manager, zip.
+backup (Déjà Dup), bleachbit, chromium, clamtk, clamav, clamav-daemon, curl, dangerzone, dconf-editor, dialog, deluge, foliate (ebook reader), filezilla, firefox, gdebi, geany, gimp, git, gnome-tweak-tool, gparted, gufw, htop, libreoffice (calc & writer), livepatch, mat2, nordpass, openvpn, plex, rkhunter, snap (package manager), snapd, synaptic, tilix, telegram, unrar, veracrypt, virtualbox, vlc, webtorrent, wget, y-ppa-manager, zip.
 
 Get's my other scripts's (rkhunter-script & auto-update-ubuntu.sh)
 
@@ -18,3 +18,5 @@ Also installs rkhunter (a rootkit hunter) which can be configured with the below
 https://kifarunix.com/how-to-install-rkhunter-rootkit-hunter-on-ubuntu-18-04/
 
 install: https://github.com/firstlookmedia/dangerzone
+
+Setup livepatch.
