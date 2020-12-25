@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-read -p "This script will auto install all your programs. View the README file to see what gets installed." -t 5
+read -p "This script will auto install all your programs. View the README file to see what gets installed." -t 6
 
 echo ""
 
@@ -24,11 +24,11 @@ echo "installing VeraCrypt & y-ppa-manager"
 add-apt-repository ppa:unit193/encryption -y
 add-apt-repository ppa:webupd8team/y-ppa-manager -y
 
-apt-get install veracrypt y-ppa-manager -y
+apt install veracrypt y-ppa-manager -y
 
 #install apps through snap
 echo "Installing snap packages"
-snap install plexmediaserver foliate nordpass telegram-desktop gimp chromium
+snap install plexmediaserver foliate nordpass telegram-desktop gimp chromium 
 
 service plexmediaserver restart
 #allows nordpass snap to connect to browsers
@@ -38,9 +38,13 @@ snap connect nordpass:password-manager-service
 echo "Installing Deja Dup Backup"
 snap install deja-dup --classic
 
+#install visual studio code
+echo "Installing Visual Studio Code"
+snap install code --classic
+
 #install webtorrent
 echo "installing WebTorrent Desktop" 
-wget https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.21.0/webtorrent-desktop_0.21.0_amd64.deb
+wget https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.24.0/webtorrent-desktop_0.24.0_amd64.deb
 dpkg -i webtorrent*.deb
 rm webtorrent*.deb
 
