@@ -17,13 +17,13 @@ apt autoclean
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
 
-apt install mat2 bleachbit clamtk clamav clamav-daemon curl dconf-editor deluge filezilla firefox gufw git gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn rkhunter snap snapd synaptic tilix virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools -y
+apt install mat2 bleachbit clamtk clamav clamav-daemon curl dconf-editor deluge filezilla firefox gufw git gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn rkhunter snap snapd synaptic tilix virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools curl gnupg apt-transport-https -y
 
 #install veracrypt & y-ppa-manager via PPA
 echo "installing VeraCrypt & y-ppa-manager"
 add-apt-repository ppa:unit193/encryption -y
 add-apt-repository ppa:webupd8team/y-ppa-manager -y
-
+apt update
 apt install veracrypt y-ppa-manager -y
 
 #install apps through snap
@@ -57,10 +57,14 @@ wget https://raw.githubusercontent.com/AmirIqbal1/auto-update-ubuntu-script/mast
 echo "chmodding those scripts"
 chmod +x update.sh rkhunter-check.sh clamav-autocheck.sh
 
-#get pcloud 64bit client, puts it into the download folder
-cd Downloads
-
-wget https://p-def1.pcloud.com/cBZLReAUjZLbsoWfZGnhJ7ZZ4l66a7Z2ZZGNHZkZpOo5VZzFZtkZO0ZYXZ45Z37ZpVZY0Z3FZr5ZGFZh5ZVXZyVZtouTkZv13bkNVgBHkmEymgiPHFz5p2HEw7/pcloud
+#install dangerzone
+echo "installing dangerzone"
+apt update
+curl -L https://packagecloud.io/firstlookmedia/code/gpgkey | sudo apt-key add -
+#change the below line if you have different OS
+echo "deb https://packagecloud.io/firstlookmedia/code/ubuntu/ bionic main" | sudo tee -a /etc/apt/sources.list.d/firstlookmedia_code.list
+apt update
+apt install dangerzone -y
 
 #fixes any errors and auto cleans packages downloaded/ not needed anymore
 echo "auto cleaning now, and fixing any errors."
