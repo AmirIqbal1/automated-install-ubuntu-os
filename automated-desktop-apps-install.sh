@@ -65,12 +65,11 @@ chmod +x update.sh rkhunter-check.sh clamav-autocheck.sh
 
 #install dangerzone
 echo "installing dangerzone"
-apt update -y
+apt update
 curl -L https://packagecloud.io/firstlookmedia/code/gpgkey | sudo apt-key add -
 #change the below line if you have different OS
 echo "deb https://packagecloud.io/firstlookmedia/code/ubuntu/ bionic main" | sudo tee -a /etc/apt/sources.list.d/firstlookmedia_code.list
-apt update -y
-apt install dangerzone -y
+apt update && apt install dangerzone -y
 
 #fixes any errors and auto cleans packages downloaded/ not needed anymore
 echo "auto cleaning now, and fixing any errors."
