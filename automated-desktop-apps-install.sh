@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#checks if your root
+## get UID 
+uid=$(id -u)
+ 
+## Check for it
+[ $uid -ne 0 ] && { echo "Only root may run this. Please login as root."; exit 1; }
+
 echo ""
 read -p "This script will auto install all your programs. View the README file to see what gets installed." -t 6
 
@@ -7,12 +14,12 @@ echo ""
 
 #updates system ready for packages download
 echo "getting system ready for packages to be installed"
-dpkg --configure -a
-apt update -y
-apt upgrade -y
-apt install -f
-apt clean
-apt autoclean
+dpkg --configure -a &&
+apt update &&
+apt upgrade -y &&
+apt install -f &&
+apt clean &&
+apt autoclean 
 
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
@@ -23,8 +30,7 @@ apt install mat2 bleachbit clamtk clamav clamav-daemon curl dconf-editor deluge 
 echo "installing VeraCrypt & y-ppa-manager"
 add-apt-repository ppa:unit193/encryption -y
 add-apt-repository ppa:webupd8team/y-ppa-manager -y
-apt update -y
-apt install veracrypt y-ppa-manager -y
+apt update && apt install veracrypt y-ppa-manager -y
 
 #install apps through snap
 echo "Installing snap packages"
@@ -68,10 +74,10 @@ apt install dangerzone -y
 
 #fixes any errors and auto cleans packages downloaded/ not needed anymore
 echo "auto cleaning now, and fixing any errors."
-dpkg --configure -a
-apt install -f
-apt clean
-apt autoclean
+dpkg --configure -a &&
+apt install -f &&
+apt clean &&
+apt autoclean &&
 apt autoremove -y
 
 echo ""
