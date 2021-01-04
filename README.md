@@ -16,5 +16,3 @@ https://www.pcloud.com/how-to-install-pcloud-drive-linux.html?download=electron-
 Also installs rkhunter (a rootkit hunter) which can be configured with the below link:
 
 https://kifarunix.com/how-to-install-rkhunter-rootkit-hunter-on-ubuntu-18-04/
-
-install: https://github.com/firstlookmedia/dangerzone
