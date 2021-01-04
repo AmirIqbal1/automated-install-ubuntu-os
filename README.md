@@ -5,11 +5,11 @@ This bash script will auto install selected desktop programs on Ubuntu 20.04.
 
 It will auto install all the below apps:
 
-backup (Déjà Dup), bleachbit, chromium, clamtk, clamav, clamav-daemon, curl, dangerzone, dconf-editor, dialog, deluge, foliate (ebook reader), filezilla, firefox, gdebi, geany, gimp, git, gnome-tweak-tool, gparted, gufw, htop, libreoffice (calc & writer), livepatch, mat2, nordpass, openvpn, plex, rkhunter, snap (package manager), snapd, synaptic, tilix, telegram, unrar, veracrypt, virtualbox, visual studio code, vlc, webtorrent, wget, y-ppa-manager, zip.
+apt-transport-https, backup (Déjà Dup), bleachbit, chromium, clamtk, clamav, clamav-daemon, curl, dangerzone, dconf-editor, dialog, deluge, foliate (ebook reader), filezilla, firefox, gdebi, geany, gimp, git, gnupg, gnome-tweak-tool, gparted, gufw, htop, libreoffice (calc & writer), livepatch, mat2, nordpass, openvpn, plex, rkhunter, snap (package manager), snapd, synaptic, tilix, telegram, unrar, veracrypt, virtualbox, visual studio code, vlc, webtorrent, wget, y-ppa-manager, zip .
 
 Get's my other scripts's (rkhunter-script & auto-update-ubuntu.sh)
 
-Get's pCloud Desktop app too from:
+Get pCloud Desktop app from:
 
 https://www.pcloud.com/how-to-install-pcloud-drive-linux.html?download=electron-64
 
