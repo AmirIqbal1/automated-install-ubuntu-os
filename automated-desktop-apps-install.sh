@@ -23,7 +23,7 @@ apt install mat2 bleachbit clamtk clamav clamav-daemon curl dconf-editor deluge 
 echo "installing VeraCrypt & y-ppa-manager"
 add-apt-repository ppa:unit193/encryption -y
 add-apt-repository ppa:webupd8team/y-ppa-manager -y
-apt update
+apt update -y
 apt install veracrypt y-ppa-manager -y
 
 #install apps through snap
@@ -59,11 +59,11 @@ chmod +x update.sh rkhunter-check.sh clamav-autocheck.sh
 
 #install dangerzone
 echo "installing dangerzone"
-apt update
+apt update -y
 curl -L https://packagecloud.io/firstlookmedia/code/gpgkey | sudo apt-key add -
 #change the below line if you have different OS
 echo "deb https://packagecloud.io/firstlookmedia/code/ubuntu/ bionic main" | sudo tee -a /etc/apt/sources.list.d/firstlookmedia_code.list
-apt update
+apt update -y
 apt install dangerzone -y
 
 #fixes any errors and auto cleans packages downloaded/ not needed anymore
