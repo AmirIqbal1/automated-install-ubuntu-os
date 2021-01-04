@@ -29,5 +29,6 @@ alias update.sh='
         apt autoremove -y
 '
 alias sudo='sudo -s'
+alias servicestat='service --status-all'
 
 then (source /root/.zshrc) & (source /home/$USER/.zshrc) to apply changes.
