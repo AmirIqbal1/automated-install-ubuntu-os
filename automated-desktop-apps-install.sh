@@ -24,7 +24,7 @@ apt autoclean
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
 
-apt install mat2 bleachbit clamtk clamav clamav-daemon curl dconf-editor deluge filezilla firefox gufw git gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn rkhunter snap snapd synaptic tilix virtualbox vlc unrar wget zip dialog python3-pip python3-setuptools gnupg apt-transport-https -y
+apt install mat2 bleachbit clamtk clamav clamav-daemon curl dconf-editor deluge filezilla firefox gufw git gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn rkhunter snap snapd synaptic tilix virtualbox vlc unrar wget zip zsh dialog python3-pip python3-setuptools gnupg apt-transport-https -y
 
 #install veracrypt & y-ppa-manager via PPA
 echo "installing VeraCrypt & y-ppa-manager"
