@@ -19,7 +19,7 @@ https://kifarunix.com/how-to-install-rkhunter-rootkit-hunter-on-ubuntu-18-04/
 
 Remember to setup zsh! and add this to your alias(nano /root/.zshrc) & in your user home folder!
 
-alias update.sh='
+alias aptupdate='
         dpkg --configure -a &&
         apt update &&
         apt upgrade -y &&
