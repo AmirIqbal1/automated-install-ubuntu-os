@@ -17,18 +17,10 @@ Also installs rkhunter (a rootkit hunter) which can be configured with the below
 
 https://kifarunix.com/how-to-install-rkhunter-rootkit-hunter-on-ubuntu-18-04/
 
-Remember to setup zsh! and add this to your alias(nano /root/.zshrc) & in your user home folder!
+Remember to setup zsh, and add this to your alias (nano ~/.zshrc) & in your user home folder (.zshrc).
 
-alias aptupdate='
-        dpkg --configure -a &&
-        apt update &&
-        apt upgrade -y &&
-        apt install -f &&
-        apt clean &&
-        apt autoclean &&
-        apt autoremove -y
-'
-alias sudo='sudo -s'
-alias servicestat='service --status-all'
+alias aptupdate='dpkg --configure -a && apt update && apt upgrade -y && apt install -f && apt clean && apt autoclean && apt autoremove -y'      
+alias sudo='sudo -s'    
+alias servicestat='service --status-all'        
 
 then (source /root/.zshrc) & (source /home/$USER/.zshrc) to apply changes.
