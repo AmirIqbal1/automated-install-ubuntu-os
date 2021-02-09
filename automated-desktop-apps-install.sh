@@ -55,9 +55,9 @@ dpkg -i webtorrent*.deb
 rm webtorrent*.deb
 
 #automatically gets my other script's
-echo "Grabbing other scripts: rkhunter-check, auto-update-ubuntu-script, clamav-autocheck"
+echo "Grabbing other scripts: rkhunter-check, auto-update-ubuntu-script"
 
-wget https://raw.githubusercontent.com/AmirIqbal1/auto-update-ubuntu-script/master/update.sh https://raw.githubusercontent.com/AmirIqbal1/rkhunter-script/master/rkhunter-check.sh https://raw.githubusercontent.com/AmirIqbal1/clamav-autocheck/master/clamav-autocheck.sh
+wget https://raw.githubusercontent.com/AmirIqbal1/auto-update-ubuntu-script/master/update.sh https://raw.githubusercontent.com/AmirIqbal1/rkhunter-script/master/rkhunter-check.sh
 
 #automatically chmods above scripts
 echo "chmodding those scripts"
