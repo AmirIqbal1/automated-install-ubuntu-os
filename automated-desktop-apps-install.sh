@@ -61,7 +61,7 @@ wget https://raw.githubusercontent.com/AmirIqbal1/auto-update-ubuntu-script/mast
 
 #automatically chmods above scripts
 echo "chmodding those scripts"
-chmod +x update.sh rkhunter-check.sh clamav-autocheck.sh
+chmod +x update.sh rkhunter-check.sh
 
 #install dangerzone
 echo "installing dangerzone"
