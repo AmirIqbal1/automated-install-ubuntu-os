@@ -9,16 +9,12 @@ apt-transport-https, backup (Déjà Dup), balena etcher, bleachbit, chrome, clam
 
 Get's my other scripts's (rkhunter-script & auto-update-ubuntu.sh)
 
-Get pCloud Desktop app from:
-
-https://www.pcloud.com/how-to-install-pcloud-drive-linux.html?download=electron-64
+A great cloud provider, pCloud: https://www.pcloud.com/how-to-install-pcloud-drive-linux.html?download=electron-64
+oh my zsh is a great add-on to zsh: https://github.com/ohmyzsh/ohmyzsh
 
 Also installs rkhunter (a rootkit hunter) which can be configured with the below link:
 
 https://kifarunix.com/how-to-install-rkhunter-rootkit-hunter-on-ubuntu-18-04/
-
-oh my zsh is a great add-on:
-https://github.com/ohmyzsh/ohmyzsh
 
 Remember to setup zsh, and add this to your root zshrc file (nano ~/.zshrc) & in your user home folder (/home/$USER/.zshrc).
 
