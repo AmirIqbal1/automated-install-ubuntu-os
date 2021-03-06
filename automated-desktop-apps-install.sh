@@ -48,6 +48,12 @@ snap install deja-dup --classic
 echo "Installing Visual Studio Code"
 snap install code --classic
 
+#install balena etcher
+echo "installing balena etcher"
+echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
+apt-key adv --keyserver hkps://keyserver.ubuntu.com:443 --recv-keys 379CE192D401AB61
+apt update && apt install balena-etcher-electron -y
+
 #install webtorrent
 echo "installing WebTorrent Desktop" 
 wget https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.24.0/webtorrent-desktop_0.24.0_amd64.deb
