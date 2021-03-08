@@ -18,6 +18,9 @@ https://kifarunix.com/how-to-install-rkhunter-rootkit-hunter-on-ubuntu-18-04/
 
 Remember to setup zsh, and add this to your root zshrc file (nano ~/.zshrc) & in your user home folder (/home/$USER/.zshrc).
 
+alias l='ls'  
+alias la='ls -a'  
+alias ll='ls -al' 
 alias aptupdate='dpkg --configure -a && apt update && apt upgrade -y && apt install -f && apt clean && apt autoclean && apt autoremove -y'      
 alias sudo='sudo -s'  
 alias servicestat='service --status-all'  
