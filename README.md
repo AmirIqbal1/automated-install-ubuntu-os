@@ -20,7 +20,7 @@ Remember to setup zsh, and add this to your root zshrc file (nano ~/.zshrc) & in
 
 alias l='ls'  
 alias la='ls -a'  
-alias ll='ls -al' 
+alias ll='ls -al'   
 alias aptupdate='dpkg --configure -a && apt update && apt upgrade -y && apt install -f && apt clean && apt autoclean && apt autoremove -y'      
 alias sudo='sudo -s'  
 alias servicestat='service --status-all'  
