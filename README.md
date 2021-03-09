@@ -24,7 +24,7 @@ alias ll='ls -al'
 alias aptupdate='dpkg --configure -a && apt update && apt upgrade -y && apt install -f && apt clean && apt autoclean && apt autoremove -y'      
 alias sudo='sudo -s'  
 alias servicestat='service --status-all'  
-alias plexstart='snap start plexmediaserver'
-alias plexstop='snap stop plexmediaserver'
+alias plexstart='snap start plexmediaserver'    
+alias stopplex='snap stop plexmediaserver'    
 
 then (source /root/.zshrc) & (source /home/$USER/.zshrc) to apply changes.
