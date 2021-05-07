@@ -48,6 +48,10 @@ snap install deja-dup --classic
 echo "Installing Visual Studio Code"
 snap install code --classic
 
+#installs gitkraken
+echo "installing gitkraken"
+snap install gitkraken --classic
+
 #install balena etcher
 echo "installing balena etcher"
 echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
