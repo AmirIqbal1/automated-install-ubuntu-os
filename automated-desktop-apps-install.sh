@@ -24,7 +24,7 @@ apt autoclean
 #these packages install from universe and ubuntu normal repo's
 #the rest install from wget commands
 
-apt install mat2 bleachbit clamav clamav-daemon curl dconf-editor deluge filezilla firefox gufw git gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn rkhunter snap snapd synaptic tilix virtualbox vlc unrar wget zip zsh dialog python3-pip python3-setuptools gnupg apt-transport-https -y
+apt install mat2 bleachbit curl dconf-editor deluge filezilla firefox gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn rkhunter snap snapd synaptic tilix virtualbox vlc unrar wget zip zsh dialog python3-pip python3-setuptools gnupg apt-transport-https -y
 
 #install veracrypt & y-ppa-manager via PPA
 echo "installing VeraCrypt & y-ppa-manager"
@@ -34,9 +34,11 @@ apt update && apt install veracrypt y-ppa-manager -y
 
 #install apps through snap
 echo "Installing snap packages"
-snap install plexmediaserver foliate nordpass telegram-desktop gimp 
+snap install plexmediaserver foliate nordpass telegram-desktop 
 
-service plexmediaserver restart
+snap stop plexmediaserver
+snap start plexmediaserver
+
 #allows nordpass snap to connect to browsers
 snap connect nordpass:password-manager-service
 
@@ -47,10 +49,6 @@ snap install deja-dup --classic
 #install visual studio code
 echo "Installing Visual Studio Code"
 snap install code --classic
-
-#installs gitkraken
-echo "installing gitkraken"
-snap install gitkraken --classic
 
 #install balena etcher
 echo "installing balena etcher"
