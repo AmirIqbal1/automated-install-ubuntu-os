@@ -1,5 +1,5 @@
 # automated-install-ubuntu-os
-This bash script will auto install selected desktop programs on Ubuntu OS.
+This bash script will auto install selected desktop programs on Ubuntu OS. Working on Ubuntu 20.04.
 
 "chmod +x automated-desktop-apps-install.sh" the file before starting, and make sure you run as root!
 
