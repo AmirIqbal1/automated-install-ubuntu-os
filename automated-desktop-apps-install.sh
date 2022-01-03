@@ -21,6 +21,11 @@ apt autoclean
 
 apt install mat2 bleachbit curl dconf-editor deluge filezilla firefox gufw git gimp gdebi gnome-tweak-tool geany gparted htop libreoffice-calc libreoffice-writer openvpn rkhunter snap snapd synaptic tilix virtualbox vlc unrar wget zip zsh dialog gnupg apt-transport-https -y
 
+echo "Installing Brave Browser"
+curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg && 
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list && 
+apt update && apt install brave-browser -y
+
 echo "installing veracrypt & y-ppa-manager via PPA"
 add-apt-repository ppa:unit193/encryption -y &&
 add-apt-repository ppa:webupd8team/y-ppa-manager -y &&
@@ -38,16 +43,17 @@ snap connect nordpass:password-manager-service
 echo "Installing Deja-Dup Backup and Visual Studio Tool"
 snap install deja-dup --classic && snap install code --classic
 
-echo "installing balena etcher"
+echo "Installing balena etcher"
 curl -1sLf \
    'https://dl.cloudsmith.io/public/balena/etcher/setup.deb.sh' \
    | sudo -E bash &&
    apt update && apt install balena-etcher-electron -y
 
-echo "installing WebTorrent & Foliate" 
-wget https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.24.0/webtorrent-desktop_0.24.0_amd64.deb https://github.com/johnfactotum/foliate/releases/download/2.6.3/com.github.johnfactotum.foliate_2.6.3_all.deb
-dpkg -i webtorrent*.deb com.github.johnfactotum.foliate*.deb
-rm webtorrent*.deb com.github.johnfactotum.foliate*.deb
+echo "Installing WebTorrent, Chrome & Foliate" 
+wget https://github.com/webtorrent/webtorrent-desktop/releases/download/v0.24.0/webtorrent-desktop_0.24.0_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb https://github.com/johnfactotum/foliate/releases/download/2.6.3/com.github.johnfactotum.foliate_2.6.3_all.deb
+dpkg -i webtorrent*.deb google-chrome-stable*.deb com.github.johnfactotum.foliate*.deb
+rm webtorrent*.deb google-chrome-stable*.deb com.github.johnfactotum.foliate*.deb
+apt -f install
 
 #auto gets my other script's
 echo "Grabbing other scripts: rkhunter-check, auto-update-ubuntu-script"
@@ -55,8 +61,7 @@ wget https://raw.githubusercontent.com/AmirIqbal1/auto-update-ubuntu-script/mast
 echo "chmodding above scripts"
 chmod +x update.sh rkhunter-check.sh
 
-#install dangerzone
-echo "installing dangerzone"
+echo "Installing dangerzone"
 apt update
 curl -s https://packagecloud.io/install/repositories/firstlookmedia/code/script.deb.sh | sudo bash &&
 apt update && apt install dangerzone -y
