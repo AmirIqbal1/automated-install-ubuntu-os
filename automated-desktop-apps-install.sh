@@ -32,7 +32,7 @@ add-apt-repository ppa:webupd8team/y-ppa-manager -y &&
 apt update && apt install veracrypt y-ppa-manager -y
 
 echo "Installing snap packages"
-snap install plexmediaserver nordpass telegram-desktop 
+snap install plexmediaserver nordpass telegram-desktop authy
 
 snap stop plexmediaserver &&
 snap start plexmediaserver
